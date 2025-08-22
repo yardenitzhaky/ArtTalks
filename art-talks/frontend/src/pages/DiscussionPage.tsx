@@ -78,7 +78,8 @@ const DiscussionPage: React.FC = () => {
         <div className="artwork-section">
           {/* Left: artwork image */}
           <div className="artwork-display">
-            <img 
+            <img
+              loading="lazy"
               src={artwork.imageUrl} 
               alt={artwork.title} 
               className="artwork-image-large"

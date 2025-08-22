@@ -28,7 +28,7 @@ cd ArtTalks/art-talks
 # Backend
 cd art-talks/backend
 npm install
-npm run dev  # runs on http://localhost:5000 (sometimes 3001, in my pc 5000 occupied)
+npm run dev  # runs on http://localhost:3001
 
 # Frontend (new terminal)
 cd art-talks/frontend
