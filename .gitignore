@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+art-talks/backend/node_modules/
+art-talks/frontend/node_modules/
+
+# System files
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+build/
+dist/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MCP and Claude configuration files
+.mcp.json
+art-talks/CLAUDE.md

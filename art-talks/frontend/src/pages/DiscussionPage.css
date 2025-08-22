@@ -1,0 +1,178 @@
+.discussion-page {
+  flex: 1;
+  background-color: #f8f9fa;
+}
+
+.discussion-header {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.discussion-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+  color: #333;
+  font-weight: 300;
+}
+
+.artist-name {
+  margin: 0;
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+}
+
+.discussion-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.artwork-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.artwork-display {
+  width: 100%;
+  max-height: 500px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.artwork-image-large {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.artwork-info {
+  padding: 30px;
+}
+
+.artwork-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.artwork-info .artist {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+}
+
+.artwork-info .description {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.metadata h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.metadata-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.metadata-item .label {
+  font-weight: 500;
+  color: #333;
+}
+
+.metadata-item .value {
+  color: #666;
+}
+
+.chat-section {
+  height: fit-content;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 1024px) {
+  .discussion-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .chat-section {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .discussion-content {
+    padding: 10px;
+  }
+  
+  .discussion-header {
+    padding: 15px;
+  }
+  
+  .discussion-header h1 {
+    font-size: 24px;
+  }
+  
+  .artwork-info {
+    padding: 20px;
+  }
+  
+  .metadata-grid {
+    grid-template-columns: 1fr;
+  }
+}
