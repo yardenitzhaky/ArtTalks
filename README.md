@@ -18,7 +18,7 @@ Full-stack art gallery application with real-time chat functionality.
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/yardenitzhaky/ArtTalks
 cd compie_home_test
 ```
 
