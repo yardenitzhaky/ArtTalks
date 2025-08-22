@@ -1,5 +1,5 @@
 // Realtime chat for an artwork using Socket.IO
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { io, Socket } from 'socket.io-client';
 import { ChatMessage } from '../types';
 import './ChatInterface.css';
@@ -43,11 +43,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ artworkId }) => {
     { id: -2, username: 'Jorge410', message: 'Lorem Ipsum!', timestamp: new Date().toISOString() },
     { id: -3, username: 'sal89920', message: 'Indeed!', timestamp: new Date().toISOString() }
   ];
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   useEffect(() => {
     // Connect and join the artwork-specific room
@@ -119,7 +114,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ artworkId }) => {
             <div className="message-content">{message.message}</div>
           </div>
         ))}
-        <div ref={messagesEndRef} />
       </div>
 
       <form onSubmit={handleSendMessage} className="message-form">

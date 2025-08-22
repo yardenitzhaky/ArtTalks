@@ -46,7 +46,7 @@ const ArtworkCard: React.FC<ArtworkCardProps> = ({ artwork }) => {
         onMouseLeave={handleMouseLeave}
       >
         <div className="artwork-image-container">
-          <img src={artwork.imageUrl} alt={artwork.title} className="artwork-image" />
+          <img loading="lazy" src={artwork.imageUrl} alt={artwork.title} className="artwork-image" />
         </div>
         <div className="artwork-details">
           <h3 className="artwork-title">{artwork.title}</h3>

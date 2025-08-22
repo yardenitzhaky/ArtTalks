@@ -1,7 +1,7 @@
 // API page for the frontend
 import { Artwork, ApiResponse } from '../types';
 
-const API_BASE_URL = 'http://localhost:3001/api';
+const API_BASE_URL = 'http://localhost:3001/api'; // Don't need .env file for this simple project
 
 // Get all artworks
 export const fetchArtworks = async (): Promise<Artwork[]> => {

@@ -1,4 +1,4 @@
-// Express HTTP server + Socket.IO 
+// Express HTTP server + Socket.IO (Small enough for one file)
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3000", // Don't need .env file for this simple project
     methods: ["GET", "POST"]
   }
 });

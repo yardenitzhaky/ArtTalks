@@ -19,7 +19,7 @@ Full-stack art gallery application with real-time chat functionality.
 
 ```bash
 git clone https://github.com/yardenitzhaky/ArtTalks
-cd compie_home_test
+cd ArtTalks/art-talks
 ```
 
 ### 2. Setup and Run
@@ -35,6 +35,17 @@ cd art-talks/frontend
 npm install
 npm start    # runs on http://localhost:3000
 ```
+
+## Testing
+
+```bash
+cd art-talks/backend
+npm test
+```
+Tests include:
+- REST API endpoints
+- CORS functionality
+- Error handling
 
 ## API
 - `GET /api/artworks` - All artworks
